@@ -1,12 +1,10 @@
 FROM node:18.12.1
 
-WORKDIR /app
-
 COPY pakcage*.json ./app
 
-RUN npm install
-
 COPY . .
+
+RUN npm install
 
 EXPOSE 3000
 
