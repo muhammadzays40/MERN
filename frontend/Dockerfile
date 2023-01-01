@@ -2,7 +2,7 @@ FROM node:18.12.1
 
 WORKDIR /app
 
-COPY pakcage*.json ./
+COPY pakcage*.json ./app
 
 RUN npm install
 
